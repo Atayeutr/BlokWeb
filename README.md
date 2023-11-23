@@ -19,10 +19,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Tim Dinh
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Blauwe Piste
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  surface plane
  
 </details>
 
@@ -36,15 +36,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-
+  https://nos.nl
+  Ik ga de homepagina van de NOS en een artikel pagina namaken.
+  Ik ben van plan om leuke animaties te tonen over een artikel als je met je muis eroverheen hovert.
+  
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Dit is de Homepagina van NOS  
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="De homepagina van NOS met enkele recentelijke artikelen">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Dit is de artikel pagina met detail over de nieuws item
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="De detailpagina van een artikel van NOS">
  
 </details>
 
@@ -57,6 +59,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  Tijdens het testen van de NOS website met een screenreader was het nogal een gedoe, omdat het nog nieuw is voor mij om te gebruiken, maar na een tijdje spelen
+  met de screenreader is het me gelukt om door de Homepagina te navigeren, alhoewel het heel lastig is is het alsnog mogelijk, net als de lift van de TTH is het 
+  te doen maar is het niet makkelijk. 
+  Verder heb ik gezocht naar enige problemen voor kleurenblinden en heb ik een kleurenfilter op mijn laptop aangezet om te zien hoe het eruit zou zien als
+  ik kleurenblind was, ik merkte niet echt verschil ookal gebruikt NOS veel contrast, omdat zij een goede verhouding gebruiken met de lettertypen en hierarchy
+  in tekst is het nog duidelijk te begrijpen wat de content is.
 
 </details>
 
@@ -68,9 +76,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
+  Dit is de breakdownschets van de gehele NOS homepagina, alhoewel het heel lang is kan ik onnodige delen weglaten en alleen de belangrijke deel namaken.
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
+  Dit is de breakdown van de navigatie/menu. NOS maakt gebruik van uitklapbare menu's op de homepagina, dus je wordt niet doorverwezen naar andere links voor de menu.
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
