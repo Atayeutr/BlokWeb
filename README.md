@@ -58,14 +58,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  Lijst met je bevindingen die in de test naar voren kwamen:<br>
   Tijdens het testen van de NOS website met een screenreader was het nogal een gedoe, omdat het nog nieuw is voor mij om te gebruiken, maar na een tijdje spelen
   met de screenreader is het me gelukt om door de Homepagina te navigeren, alhoewel het heel lastig is is het alsnog mogelijk, net als de lift van de TTH is het 
-  te doen maar is het niet makkelijk. 
+  te doen maar is het niet makkelijk. <br>
   Verder heb ik gezocht naar enige problemen voor kleurenblinden en heb ik een kleurenfilter op mijn laptop aangezet om te zien hoe het eruit zou zien als
   ik kleurenblind was, ik merkte niet echt verschil ookal gebruikt NOS veel contrast, maar omdat zij een goede verhouding gebruiken met de lettertypen en hierarchy
   in tekst is het nog duidelijk te begrijpen wat de content is.
-  Verder voldoet NOS wel aan de WCAG lijst.
+  <br>Verder voldoet NOS wel aan de WCAG lijst.
 
 </details>
 
@@ -78,7 +78,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### de hele pagina: 
   Dit is de breakdownschets van de gehele NOS homepagina, alhoewel het heel lang is kan ik onnodige delen weglaten en alleen de belangrijke deel namaken.
-  <img src="readme-images/breakdownschets.pdf" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   Dit is de breakdown van de navigatie/menu. NOS maakt gebruik van uitklapbare menu's op de homepagina, dus je wordt niet doorverwezen naar andere links voor de menu.
