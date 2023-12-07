@@ -1,0 +1,234 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+
+*, *::after, *::before {
+  box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#222222;
+	--color-background:#eee;
+	--color-title: white;
+	--font-family: verdana;
+	--grey: #666666;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+nav ul li {
+    margin: 0.5em;
+	display: inline-block;
+}
+
+h1 {
+	padding: .5em;
+}
+
+svg {
+	width: 1.5em;
+	height: 1.5em;
+	fill: var(--grey);
+}
+
+nav ul li a {
+	font-family: var(--font-family);
+	color: var(--color-text);
+	text-decoration: none;
+	color:var(--grey);
+}
+
+nav img {
+	width: 2.5em;
+	height: 1em;
+	margin: 0;
+}
+
+body section img {
+	width: 100%;
+	border-radius: .2em;
+}
+
+main section:first-of-type {
+	position: relative;
+}
+
+main section:first-of-type h2{
+	position: absolute;
+	bottom:0;
+	padding: 1em;
+	font-family: var(--font-family);
+	color: var(--color-title);
+	background-image: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
+	/*Bron: https://www.w3schools.com/cssref/tryit.php?filename=trycss3_gradient-linear_trans */
+}
+
+main section:nth-of-type(2) {
+	display: flex;
+}
+
+main section:nth-child(2) article{
+	margin: 1em;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+main section:nth-child(2) p{
+	padding:.5em;
+} 
+
+a {
+	text-decoration: none;
+}
+
+h3 {
+	color: var(--color-text);
+	font-size: 0.8em;
+	font-weight: 100;
+	text-decoration: none;
+	font-family: var(--font-family);
+}
+
+main section:last-of-type article {
+	display: flex;
+	align-items: center;
+}
+
+main section:last-of-type img {
+	width: 4em;
+	height: 4em;
+	margin: 1em;
+	border-radius: 0.2em;
+}
+
+/* veranderd door student assistente */
+main section:nth-of-type(2)>article {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+
+
+
+
+
+
+footer {
+	background-color: rgb(235, 235, 235);
+	padding: 1.5em;
+	display: flex;
+	flex-direction: column;
+}
+
+footer h3{
+	color: red;
+	font-weight: 800;
+	padding-bottom: .5em;
+}
+
+footer a {
+	display: block;
+	justify-content: center;
+	color: rgb(78, 78, 78);
+	font-family: var(--font-family);
+	text-decoration: none;
+	padding: .5em 0;
+}
+
+footer img {
+	align-self: center;
+	width: 4em;
+	height: 2em;
+}
+
+/* De tab state */
+a:focus, h2:focus, h3:focus{
+	text-decoration-thickness:2px;
+	color: black;
+	text-underline-offset: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: rgb(61, 61, 61);
+	}
+	h1, h2, h3, footer a, header nav a {
+		color: white;
+	}
+	footer {
+		background-color: rgb(94, 94, 94);
+	}
+}
+
+
+/*Bron animatie: https://imagekit.io/blog/creating-css-image-effects/#:~
+:text=To%20create%20an%20animation%2C%20we,10%25%20of%20the%20animation%20duration. */
+
+section:first-of-type img:hover {
+	animation: vibrate 0.5s;
+	animation-iteration-count: infinite;
+  }
+
+  @keyframes vibrate {
+	0% { transform: rotate(0deg); }
+	10% { transform: rotate(-1deg); }
+	20% { transform: rotate(1deg); }
+	30% { transform: rotate(0deg); }
+	40% { transform: rotate(1deg); }
+	50% { transform: rotate(-1deg); }
+	60% { transform: rotate(0deg); }
+	70% { transform: rotate(-1deg); }
+	80% { transform: rotate(1deg); }
+	90% { transform: rotate(0deg); }
+	100% { transform: rotate(-1deg); }
+  }
+  
+
+
+  /* 2e pagina */
+
+  /*Bron flip: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_image2 
+  helemaal veranderd naar eigen begrip*/
+
+  .flip {
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	padding-top: 15em;
+  }
+  
+  .flip:hover {
+	transform: rotateY(180deg);
+  }
+  
+  .flip img {
+	position: absolute;
+	backface-visibility: hidden;
+	width: 100vw;
+	height: 15em;
+	top: 0;
+  }
+
+  .flip img:last-of-type {
+	transform: rotateY(180deg);
+  }
+
+  #detail p, #detail h2 {
+	margin: 1em;
+	font-family: var(--font-family);
+  }
