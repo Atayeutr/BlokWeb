@@ -25,6 +25,7 @@ a, h2, h3, p {
 	--color-title: white;
 	--font-family: verdana;
 	--grey: #666666;
+	--hover: red;
 }
 
 
@@ -50,8 +51,6 @@ svg {
 	fill: var(--grey);
 }
 
-
-
 nav ul li {
     margin: 0.5em;
 	display: inline-block;
@@ -68,10 +67,53 @@ nav img {
 	margin: 0;
 }
 
+/* Dit is de dropdown menu */
+
+/* Menu dropdown bron inspiratie: https://www.w3schools.com/howto/howto_js_dropdown.asp 
+aria-label besproken in de les*/
+
+a[aria-label="dropdownButton"] {
+	font-family: var(--font-family);
+	color: var(--color-text);
+	text-decoration: none;
+	color:var(--grey);
+	padding: 0 0 0 .5em;
+}
+
+a[aria-label="dropdownButton"]:hover {
+	color: var(--hover)
+}
+
+ul[aria-label="Content"] {
+position: absolute;
+background-color: white;
+z-index: 1;
+opacity: 0; 
+transition: opacity 0.4s ease; 
+width: 10em;
+}
+
+ul[aria-label="Content"] li {
+display: block;
+}
+
+ul[aria-label="Content"] li a {
+color: var(--grey);
+padding: .5em 1em .5em .2em;
+display: block;
+}
+
+ul[aria-label="Content"] li a:hover {
+color: var(--hover);
+}
+
+a[aria-label="dropdownButton"]:hover + ul[aria-label="Content"],
+ul[aria-label="Content"]:hover {
+opacity: 1;
+}
 
 
-
-
+/* Hier begint de content  */
 
 section img {
 	width: 100%;
@@ -89,6 +131,28 @@ section:first-of-type h2{
 	color: var(--color-title);
 	background: linear-gradient(rgba(255, 255, 255, 0), rgb(0, 0, 0));
 	/*Bron: https://www.w3schools.com/cssref/tryit.php?filename=trycss3_gradient-linear_trans */
+}
+
+/*Bron aardbeving animatie: https://imagekit.io/blog/creating-css-image-effects/#:~
+:text=To%20create%20an%20animation%2C%20we,10%25%20of%20the%20animation%20duration. */
+
+section:first-of-type img:hover {
+	animation: vibrate 0.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes vibrate {
+0% { transform: rotate(0deg); }
+10% { transform: rotate(-1deg); }
+20% { transform: rotate(1deg); }
+30% { transform: rotate(0deg); }
+40% { transform: rotate(1deg); }
+50% { transform: rotate(-1deg); }
+60% { transform: rotate(0deg); }
+70% { transform: rotate(-1deg); }
+80% { transform: rotate(1deg); }
+90% { transform: rotate(0deg); }
+100% { transform: rotate(-1deg); }
 }
 
 section:nth-of-type(2) {
@@ -120,7 +184,6 @@ main section:last-of-type article {
 	border-bottom: 1px solid rgb(222, 221, 221);
 }
 
-
 main section:last-of-type img {
 	width: 6em;
 	height: 4em;
@@ -130,7 +193,7 @@ main section:last-of-type img {
 
 
 
-
+/* Dit is de footer */
 
 
 footer {
@@ -158,15 +221,19 @@ footer img {
 	height: 2em;
 }
 
-/* De tab state */
+
+
+/* Dit is de vormgeving voor de tab state */
+
 /* De h2:focus en h:3focus is voor screenreaders om op headers te focussen*/
+
 a:focus, h2:focus, h3:focus{
 	border: 2px solid black;
 }
 
 
-/* Dit is voor de darkmode */
 
+/* Dit is voor de darkmode: Bron in de les besproken */
 
 @media (prefers-color-scheme: dark) {
 	body, footer {
@@ -181,86 +248,64 @@ a:focus, h2:focus, h3:focus{
 }
 
 
-/*Bron animatie: https://imagekit.io/blog/creating-css-image-effects/#:~
-:text=To%20create%20an%20animation%2C%20we,10%25%20of%20the%20animation%20duration. */
-
-section:first-of-type img:hover {
-	animation: vibrate 0.5s;
-	animation-iteration-count: infinite;
-}
-
-@keyframes vibrate {
-0% { transform: rotate(0deg); }
-10% { transform: rotate(-1deg); }
-20% { transform: rotate(1deg); }
-30% { transform: rotate(0deg); }
-40% { transform: rotate(1deg); }
-50% { transform: rotate(-1deg); }
-60% { transform: rotate(0deg); }
-70% { transform: rotate(-1deg); }
-80% { transform: rotate(1deg); }
-90% { transform: rotate(0deg); }
-100% { transform: rotate(-1deg); }
-}
-
 
 /* Dit is uit de opdrachten over animaties Bron: https://codepen.io/shooft/pen/NWePYRO*/
 
 @keyframes zoom {
 	0% {
-	  scale:1;
+		scale:1;
 	}
 	100% {
-	  scale:1.05;
+		scale:1.05;
 	}
-  }
+}
   
- article img:hover {
+article img:hover {
 	animation-name:zoom;
 	animation-duration:1s;
 	animation-iteration-count:1;
-  }
+}
 
 
 
 /* De Wereld draait door animatie */
 
-  @keyframes Draai {
+@keyframes Draai {
 	0% {
-	  rotate:0turn;
+		rotate:0turn;
 	}
 	100% {
-	  rotate:1turn;
+		rotate:1turn;
 	}
-  }
+}
   
-  article[aria-label="draai"].ruzie img {
+article[aria-label="draai"].ruzie img {
 	animation-name: Draai;
 	animation-duration:.3s;
 	animation-iteration-count:2;
-  }
+}
 
 
 /* Auto animatie */
 
-  @keyframes Salto {
+@keyframes Salto {
 	0% {
 	  rotate:0deg;
 	}
 	100% {
 	  rotate:180deg;
 	}
-  }
+}
   
-  article[aria-label="Auto"]:hover img {
+article[aria-label="Auto"]:hover img {
 	animation-name: Salto;
 	animation-duration:1s;
-  }
+}
 
 
-  /* De bom animatie */
+/* De bom animatie */
 
-  @keyframes Explosie {
+@keyframes Explosie {
 	0% {
 	  scale:1;
 	}
@@ -270,16 +315,17 @@ section:first-of-type img:hover {
 	100% {
 	  scale:1;
 	}
-  }
+}
   
-  article[aria-label="Bom"]:hover img {
+article[aria-label="Bom"]:hover img {
 	animation-name:Explosie;
 	animation-duration:1s;
 	animation-iteration-count:3;
-  }
+}
 
 
 /* 2e pagina */
+/* Dit is de flip foto van Sinterklaar */
 
 /*Bron flip: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_image2 
 helemaal veranderd naar eigen begrip*/
@@ -308,51 +354,4 @@ transform: rotateY(180deg);
 
 .detail p, .detail h2 {
 margin: 1em 1em 1em .4em;
-}
-
-
-
-
-
-
-/* Menu dropdown bron inspiratie: https://www.w3schools.com/howto/howto_js_dropdown.asp */
-
-a[aria-label="dropdownButton"] {
-	font-family: var(--font-family);
-	color: var(--color-text);
-	text-decoration: none;
-	color:var(--grey);
-	padding: 0 0 0 .5em;
-}
-
-a[aria-label="dropdownButton"]:hover {
-	color: red;
-}
-
-ul[aria-label="Content"] {
-position: absolute;
-background-color: white;
-z-index: 1;
-opacity: 0; 
-transition: opacity 0.4s ease; 
-width: 10em;
-}
-
-ul[aria-label="Content"] li {
-display: block;
-}
-
-ul[aria-label="Content"] li a {
-color: var(--grey);
-padding: .5em 1em .5em .2em;
-display: block;
-}
-
-ul[aria-label="Content"] li a:hover {
-color: red;
-}
-
-a[aria-label="dropdownButton"]:hover + ul[aria-label="Content"],
-ul[aria-label="Content"]:hover {
-opacity: 1;
 }

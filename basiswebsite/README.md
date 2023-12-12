@@ -217,5 +217,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   1. bron voor de aardbeving effect: https://imagekit.io/blog/creating-css-image-effects/#:~
 :text=To%20create%20an%20animation%2C%20we,10%25%20of%20the%20animation%20duration.
   2. Bron voor de image flip: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_image2 
-  3. Bron voor de menu dropdown: https://www.w3schools.com/howto/howto_js_dropdown.asp
+  3. Bron voor de menu dropdown: https://www.w3schools.com/howto/howto_js_dropdown.asp4
+  4. Bron background gradient: 	Bron: https://www.w3schools.com/cssref/tryit.php?filename=trycss3_gradient-linear_trans 
+  5. animaties Bron: https://codepen.io/shooft/pen/NWePYRO*/
 </details>
