@@ -72,7 +72,7 @@ nav img {
 /* Menu dropdown bron inspiratie: https://www.w3schools.com/howto/howto_js_dropdown.asp 
 aria-label besproken in de les*/
 
-a[aria-label="dropdownButton"] {
+a[aria-label="dropdownmenu"] {
 	font-family: var(--font-family);
 	color: var(--color-text);
 	text-decoration: none;
@@ -80,7 +80,7 @@ a[aria-label="dropdownButton"] {
 	padding: 0 0 0 .5em;
 }
 
-a[aria-label="dropdownButton"]:hover {
+a[aria-label="dropmenu"]:hover {
 	color: var(--hover)
 }
 
@@ -107,7 +107,7 @@ ul[aria-label="Content"] li a:hover {
 color: var(--hover);
 }
 
-a[aria-label="dropdownButton"]:hover + ul[aria-label="Content"],
+a[aria-label="dropdownmenu"]:hover + ul[aria-label="Content"],
 ul[aria-label="Content"]:hover {
 opacity: 1;
 }
@@ -161,9 +161,6 @@ section:nth-of-type(2) {
 
 section:nth-of-type(2) article{
 	margin: 1em;
-	display: flex;
-	flex-direction: column-reverse;
-	/* hier heeft de studentassistente mee geholpen */
 }
 
 section:nth-of-type(2) article img {
