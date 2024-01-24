@@ -189,20 +189,28 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
-  ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  ### Je uitkomst van Mondeling
+  Mijn code en animaties zijn goed en voldoende, Javascript is ook goed.
+  Code is goed uit te leggen.
+  Alleen moet ik de nav goed vormgeven en gelijk maken, de hover van dropdown menu fixen.
+  De images moeten goed uitzien en niet gecropt (sinterklaas en NOS logo).
+  De vormgeving van tweede pagina ook nodig en voeg een formulier toe voor email nieuwsbrieven ofzo.
+  De darkmode met de :root maken.
+  <br>
+  Dus de verbeterpunten voor de herkansing zijn:<br>
+  1- Nav verbeteren en rechtzetten <br>
+  2- De images moeten er goed uitzien en niet gecropt <br>
+  3- De detail pagina moet meer vormgeving krijgen <br>
+  4- VOEG EEN FORMULIER TOE <br>
+  5- Maak de darkmode met :root 
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
+  Animaties maken vond ik in het begin nogal een challenge, maar door de huiswerk opdrachten van Sanne, is het mij gelukt om die te implenteren in mijn website. Verder vond ik het interessant om de zwarte pistes te bekijken en bestuderen, om te zien hoe een complexe animatie in elkaar zit. Dat blijft voor mij wel een stuk lastiger, maar het is wel leuk om het te proberen en te testen met de codepen opdrachten.
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  De website is nooit perfect en er zal altijd wel ergens een gaatje zitten ergens in de website, soms is het niet te zien voor mij en soms niet eens voor de docent, maar door de feedback gesprekken kan ik gelukkig zien wat er nog te veranderen is, om de site te verbeteren. Zoals de feedback van de mondeling die ik heb verwerkt voor de herkansing.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
